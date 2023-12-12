@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid red;
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    display: grid;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    width: inherit;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(92,122,137,0.5);
+    padding: 10px 0 10px 0;
+    width: inherit;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+h6>a{
+    text-decoration: none;
+    color: #607D8B;
+}
+
+h6>a:hover{
+    color: black;
+}
+
+form>h4{
+  display: block;
+  text-align: center;
+  border-radius: 15px;
+  color: #000000;
+  background-color: rgb(19,193,172, 0.5);
+}
+
+nav{
+  border-bottom: 1px solid rgba(92,122,137,0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  gap: 50px;
+  padding: 5px 0 5px 0;
+  width: inherit;
+  position: sticky;
+    top: 91px;
+    background-color: #fff;
+}
+
+nav>img{
+  margin-left: 15px;
+}
+
+nav>ul{
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+li>a{
+  text-decoration: none;
+  color: #5C7A89;
+  padding: 20px 0 20px 0;
+  transition: all 0.3s ease;
+}
+
+li>a:hover{
+  border-bottom: 2px solid rgb(0, 0, 0); 
+  color: #000000;
+  transform: translateY(-10px);
+}
+
+.leyenda{
+  padding-top: 4%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgba(92,122,137,0.5);
+}
+
+.leyenda>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+div>span{
+  font-size: 2rem;
+}
+
+article{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.contenido{
+  display: flex;
+  gap: 50px;
+  width: 75%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: #000000 1px solid; */
+  padding: 10px 30px 10px 30px;
+}
+
+.anuncio{
+  /* border: 1px solid green; */
+  min-height: 310px;
+  max-height: 310px;
+  max-width: 200px;
+  min-width: 200px;
+  border-radius: 20px 20px 0 0;
+  transition: all 0.3s ease;
+}
+
+.anuncio>img{
+  width: 199px;    /* Ancho deseado */
+  height: 250px;   /* Altura deseada */
+  object-fit: cover; /* Cubre el contenedor, recortando el contenido según sea necesario */
+  object-position: center center; /* Centra la parte visible de la imagen */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+}
+
+.anuncio:hover{
+  transform: translateY(-10px);
+}
+
+section>a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.info_anuncio{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.info_usuario{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.info_usuario img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover; /* Cubre el contenedor, recortando el contenido según sea necesario */
+  object-position: center center;
+  border-radius: 50%;
+  border: 2px solid #13C1AC;
+}
+
+.info_anuncio h5{
+  color: #455D63;
+  
+}
+
+
+
+.info_usuario a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border:solid 2px #000000;
+  padding: 8px;
+  background-color: #88E3D5;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.info_usuario a:hover{
+  color: #fff;
+  text-shadow: 1px black;
+  transform: translateY(-5px);
+  background-color: #13C1AC;
+}
+
+.submit_login{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.submit_login>h6>button{
+  background-color: #68f7e6;
+  margin-top: 3px;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 175px;
+  padding: 2px 0 2px 0;
+  transition: all 0.3s ease;
+}
+
+.submit_login>h6>button:hover{
+  color: #fff;
+  background-color: #13C1AC;
+}
+
+.submit_login>h6{
+  font-weight: 900;
+}
+
+.edit_delete{
+  display: flex;
+  width: 50%;
+  gap: 25px;
+}
+
+.edit_delete>a{
+  background-color: #68f7e6;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.edit_delete>a:hover{
+  transform: translateY(-5px);
+  background-color: #13C1AC;
+  border-radius: 0;
+}
+
+.content_anuncio{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.form button {
+    border: none;
+    background: none;
+    color: #13C1AC;
+  }
+
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 600px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    
+    border: 1px solid #13C1AC;
+  }
+
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+
+  /* From uiverse.io by @alexruix */
+.input_login {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input_login:focus, .input_login:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #13C1AC;
+   }
+   
+   .input_login::placeholder {
+    color: #777;
+   }
+   
+   .input_login:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+   
+
+   .footer {
+    position: relative;
+    width: 100%;
+    background: #13C1AC;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../img/output-onlinetools.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  
