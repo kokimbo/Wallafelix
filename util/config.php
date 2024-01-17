@@ -1,8 +1,8 @@
 <?php 
 
-define('MYSQL_USER', 'root');
-define('MYSQL_PASS', '');
-define('MYSQL_DB', 'wallapopFelix');
-define('MYSQL_HOST', 'localhost');
+define('MYSQL_USER', getenv("DB_USERNAME");
+define('MYSQL_PASS', getenv("DB_PASSWORD"));
+define('MYSQL_DB', getenv("DB_NAME"));
+define('MYSQL_HOST', getenv("DB_HOST"));
 
 ?>
